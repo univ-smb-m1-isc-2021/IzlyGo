@@ -1,14 +1,14 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Publish prod image
+name: IzlyGO actions
 
 on:
   push:
     branches:
       - master
-jobs:
 
+jobs:
   build:
     name : build developement branch
     runs-on: ubuntu-latest
@@ -25,16 +25,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-      - name: Build Docker image
-        run: docker build -t IzlyGo .
-
-      - name: Push to GitHub Packages
-        uses: docker/build-push-action@v1
-        with:
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: univ-smb-m1-isc-2021/IzlyGo/master
-          tags: latest
-      
