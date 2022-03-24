@@ -1,4 +1,3 @@
 # IzlyGo
 
-
-tttt
+Edition
