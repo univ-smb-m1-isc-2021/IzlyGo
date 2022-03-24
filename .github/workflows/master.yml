@@ -35,3 +35,5 @@ jobs:
           registry: docker.pkg.github.com
           repository: univ-smb-m1-isc-2021/IzlyGo/master
           tags: latest
+          
+          
