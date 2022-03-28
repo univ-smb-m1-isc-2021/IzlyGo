@@ -1,6 +1,8 @@
 
 FROM openjdk:11-jre-slim
 
+FROM docker.pkg.github.com/univ-smb-m1-isc-2021/izlygo/etudiant:latest
+
 COPY ./target/IzlyGo-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8080
