@@ -15,6 +15,7 @@
 	<description>Demo project for IzlyGO</description>
 	<properties>
 		<java.version>11</java.version>
+		<sonar.organization>univ-smb-m1-isc-2021</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	 <dependencies>
