@@ -1,4 +1,3 @@
 # IzlyGo
 
-
-chut touch
+Lien du projet : https://izlygo.herokuapp.com/
